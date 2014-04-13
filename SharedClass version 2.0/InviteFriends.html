@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SharedClass</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Dashboard -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="css/plugins/timeline/timeline.css" rel="stylesheet">
+	
+	<script src="js/lib/modernizr.js"></script>
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="css/admin.css" rel="stylesheet">
+
+</head>
+       
+<body id="dashboard-page" class="bg-gray-light" style="">
+   <nav class="navbar navbar-fixed-top not-collapse bg-g-ln-gray" role="navigation">
+  		<div class="navbar-header">
+		    <a class="navbar-brand" href="#">
+		    	Shared Class
+		    </a>
+		  </div>
+	  	<div id="top-nav">
+	  		<div class="navbar-dropdown navbar-right navbar-avatar">
+	  			<a href="#" data-target="#topavatar-toggle" class="hover-no-underline dropdown-toggle m-lr-30 mm-lr-10" data-toggle="dropdown">
+						<img src="photos/avatar.jpg" class="img-circle" width="25">
+						<span class="text-gray-light hidden-sm hidden-xs">André Luiz</span>
+						<span class="caret text-white hidden-sm hidden-xs"></span>
+					</a>
+					<ul id="topavatar-toggle" class="dropdown-menu avatar-dropdown">
+	          <li><a href="settings.html">Perfil</a></li>
+	          <li><a href="PageLogin.html">Sair</a></li>
+	        </ul>
+	  		</div>
+	  		<ul class="nav navbar-nav navbar-right">			
+			 <li>
+		      	<a href="messages.html">
+		      		<span class="glyphicon glyphicon-envelope"></span>
+		      		<span class="text-white circle-12px bg-orange text-small text-center icon-counter">4</span>
+		      		<span class="hidden-sm hidden-xs">Notificações</span>
+		      	</a>
+		      </li>
+		      <li>
+		        <a href="AddBooks.html">
+		      		<span class="glyphicon glyphicon-plus-sign"></span>
+		      		<span class="hidden-sm hidden-xs">Adicionar Caderno</span>
+		        </a>
+		       </li>
+		    </ul>
+	  	</div>
+		</nav>
+		<div class="sidebar bg-gray-dark text-white text-center pushy pushy-left">
+			<header class="bg-g-ln-gray p-tb-30 pm-tb-10 p-lr-10 b-bot-2px-gray-dark hidden-xs">
+				<a href="#" data-target="#avatar-toggle" class="hover-no-underline dropdown-toggle" data-toggle="dropdown">
+					<img src="photos/avatar.jpg" class="img-circle" width="35">
+					<span class="text-gray-light">André Luiz </span>
+					<span class="caret white"></span>
+				</a>
+			</header>
+			<ul id="avatar-toggle" class="dropdown-sidebar-avatar" role="menu" aria-labelledby="dLabel">
+				<li><a href="settings.html">Editar Perfil</a></li>
+				<li><a href="PageLogin.html">Sair</a></li>
+		  </ul>
+
+			<hr class="no-margin">
+
+			<ul class="unstyled nav">
+				<li class="active"><a href="PainelControl.html" class="text-left">Meus Cadernos</a></li>
+				<li>
+					<a href="messages.html" class="text-left">
+						Mensagens
+						<span class="badge bg-blue-light pull-right text-gray-dark brad-small">4</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="text-left dropdown-toggle" data-toggle="dropdown">
+						Amigos
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="Friends.html">Meus amigos</a></li>
+						<li><a href="InviteFriends.html">Convidar amigos</a></li>
+					</ul>
+				</li>
+				<li><a href="settings.html" class="text-left">Editar Perfil</a></li>
+			</ul>
+		</div>
+
+		<div id="container" class="main-content p-30 tp-t-60 tp-lr-10 active">
+			<div id="chat" class="bg-white p-t-30 p-b-10 chat-wrapper b-bot-2px-gray-light">
+						<div class="btn-group chat-toggle">
+								<span class="hover-no-underline hover-gray-dark text-gray">
+									<span class="text-gray-dark text-large align-with-button" style="margin-left: 25px;">
+										Convidar Amigos
+									</span>
+								</span>
+						</div>
+						<hr class="m-b-0">
+						<form class="form-horizontal" role="form">
+								<div class="col-sm-10 m-t-10">
+									<div class="i-block" >
+										<div>Email</div>
+										<input type="text" class="input-large input-light brad">
+									</div>
+								</div>
+							<div class="form-group">
+								<div class="col-sm-10 col-sm-offset-2" style="margin-left:15px">
+									<button class="btn btn-lg btn-primary" style="margin-top:10px">Enviar</button>
+								</div>
+							</div>
+						</form>
+			</div>
+  	</div>
+   <!-- Core Scripts - Include with every page -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	
+	   <script src="js/pushy.js"></script>
+	   <script src="js/retina.js"></script>
+	   <script src="js/easypiechart.js"></script>
+	   <script src="js/mosaicflow.js"></script>
+	   <script src="js/snapsvg.js"></script>
+	   <script src="js/dropzone.js"></script>
+	   <script src="js/admin.js"></script>   
+
+    <!-- Page-Level Plugin Scripts - Dashboard -->
+    <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="js/sb-admin.js"></script>
+
+    <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
+    <script src="js/demo/dashboard-demo.js"></script>
+
+</body>
+
+</html>

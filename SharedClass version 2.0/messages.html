@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SharedClass</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Dashboard -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="css/plugins/timeline/timeline.css" rel="stylesheet">
+	
+	<script src="js/lib/modernizr.js"></script>
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="css/admin.css" rel="stylesheet">
+
+</head>
+       
+<body id="dashboard-page" class="bg-gray-light" style="">
+   <nav class="navbar navbar-fixed-top not-collapse bg-g-ln-gray" role="navigation">
+  		<div class="navbar-header">
+		    <a class="navbar-brand" href="#">
+		    	Shared Class
+     	    </a>
+		  </div>
+	  	<div id="top-nav">
+	  		<div class="navbar-dropdown navbar-right navbar-avatar">
+	  			<a href="#" data-target="#topavatar-toggle" class="hover-no-underline dropdown-toggle m-lr-30 mm-lr-10" data-toggle="dropdown">
+						<img src="photos/avatar.jpg" class="img-circle" width="25">
+						<span class="text-gray-light hidden-sm hidden-xs">André Luiz</span>
+						<span class="caret text-white hidden-sm hidden-xs"></span>
+					</a>
+					<ul id="topavatar-toggle" class="dropdown-menu avatar-dropdown">
+	          <li><a href="settings.html">Perfil</a></li>
+	          <li><a href="PageLogin.html">Sair</a></li>
+	        </ul>
+	  		</div>
+	  		<ul class="nav navbar-nav navbar-right">
+		      <li>
+		      	<a href="messages.html">
+		      		<span class="glyphicon glyphicon-envelope"></span>
+		      		<span class="text-white circle-12px bg-orange text-small text-center icon-counter">4</span>
+		      		<span class="hidden-sm hidden-xs">Notificações</span>
+		      	</a>
+		      </li>
+		      <li class="dropdown">
+		        <a href="AddBooks.html">
+		      		<span class="glyphicon glyphicon-plus-sign"></span>
+		      		<span class="hidden-sm hidden-xs">Adicinar Cadernos </span>
+		        </a>
+		      </li>
+		    </ul>
+	  	</div>
+		</nav>
+
+		<div class="sidebar bg-gray-dark text-white text-center pushy pushy-left">
+			<header class="bg-g-ln-gray p-tb-30 pm-tb-10 p-lr-10 b-bot-2px-gray-dark hidden-xs">
+				<a href="#" data-target="#avatar-toggle" class="hover-no-underline dropdown-toggle" data-toggle="dropdown">
+					<img src="photos/avatar.jpg" class="img-circle" width="35">
+					<span class="text-gray-light">André Luiz </span>
+					<span class="caret white"></span>
+				</a>
+			</header>
+			<ul id="avatar-toggle" class="dropdown-sidebar-avatar" role="menu" aria-labelledby="dLabel">
+				<li><a href="settings.html">Perfil</a></li>
+				<li><a href="PageLogin.html">Sair</a></li>
+		  </ul>
+
+			<hr class="no-margin">
+
+			<ul class="unstyled nav">
+				<li><a href="PainelControl.html" class="text-left">Meus Cadernos</a></li>
+				<li class="active">
+					<a href="messages.html" class="text-left">
+						Mensagens
+						<span class="badge bg-blue-light pull-right text-gray-dark brad-small">4</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="text-left dropdown-toggle" data-toggle="dropdown">
+						Amigos
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="Friends.html">Meus amigos</a></li>
+						<li><a href="InviteFriends.html">Convidar amigos</a></li>
+					</ul>
+				</li>
+				<li><a href="settings.html" class="text-left">Editar Perfil</a></li>
+			</ul>
+		</div>
+
+		<div id="container" class="main-content tp-t-60 active">
+
+			<button class="menu-btn btn btn-bordered text-gray-alt text-bold top-left-corner tm-l-30 pull-left">☰ MENU</button>
+
+			<a href="#chat" class="btn btn-bordered text-gray-alt text-bold hidden-md hidden-lg hidden-sm top-right-corner">Chat</a>
+
+			<div class="row">
+
+				<div class="col-sm-9">
+					<div class="bg-white p-tb-30">
+						
+						<div class="btn-group">
+							<div class="iconmelon m-r-10 m-l-30">
+				        <svg viewBox="0 0 32 32">
+				          <g filter="">
+				            <use xlink:href="#speech-talk-user"></use>
+				          </g>
+				        </svg>
+				      </div>
+								
+							<span class="text-gray-dark text-large align-with-button m-r-30">
+								Caixa de Entrada
+							</span>
+						</div>
+
+						<input type="text" class="input-light input-large brad valign-top m-r-10 m-l-10 search-box" placeholder="Search...">
+						
+						<div class="pull-right m-r-30 mail-nav">
+							<span class="text-gray">						
+							</span>
+							<div class="btn-group" data-toggle="buttons">
+							  <label class="btn btn-no-bg text-gray">
+								  <span class="glyphicon glyphicon-chevron-left"></span>
+							  </label>
+							  <label class="btn btn-no-bg text-gray">
+								  <span class="glyphicon glyphicon-chevron-right"></span>
+							  </label>
+							</div>
+						</div>
+
+						<hr>
+
+						<a href="" class="btn btn-circle btn-bordered m-r-10 m-l-30 mm-l-10">
+							<span class="glyphicon glyphicon-remove"></span>
+						</a>
+
+						<a href="" class="btn btn-circle btn-bordered m-r-10">
+							<span class="glyphicon glyphicon-refresh"></span>
+						</a>
+
+						<a href="" class="btn btn-circle btn-bordered m-r-10">
+							<span class="glyphicon glyphicon-share-alt"></span>
+						</a>
+
+						<a href="" class="btn btn-circle btn-bordered m-r-10">
+							<span class="glyphicon glyphicon-star"></span>
+						</a>
+
+						<div class="btn-group pull-right m-r-30 mm-r-0 sort-buttons" data-toggle="buttons">
+							<a href="#" class="text-gray p-lr-10 m-r-10 active">Recentes</a>
+						</div>
+
+						<hr class="m-b-0">
+
+						<ul class="unstyled messages messages-selectable">
+
+							<li>
+								<a href="#" class="p-lr-30 p-tb-10 pm-lr-10">
+									<span class="avatar">
+										<img src="placeholders/avatars/1.jpg" alt="" class="img-circle retina">
+									</span>
+									<span class="author hidden-xs text-bold">Willian Santos</span>
+									<span class="subject text-bold">
+										<i class="glyphicon glyphicon-star m-r-10 text-gray-light"></i>
+										<span class="label label-success">Work</span>
+										Dizia eu que a aritmetica é a ciência .....
+									</span>
+									<span class="date"><span class="text-gray-dark">23</span> minutes ago</span>
+								</a>
+							</li>							
+						</ul>
+					</div>
+				</div> <!-- /.col-lg-9 -->
+
+				<div class="col-sm-3">
+
+					<div class="bg-white p-t-30 m-b-10 b-bot-2px-gray-light">
+						<div class="iconmelon m-r-10 m-l-30">
+			        <svg viewBox="0 0 32 32">
+			          <g filter="">
+			            <use xlink:href="#speech-talk-user"></use>
+			          </g>
+			        </svg>
+			      </div>
+							
+						<span class="text-gray-dark text-large align-with-button">
+							Caixa de entrada
+						</span>
+						<hr class="m-b-0">
+						<div class="p-lr-30">
+							<button class="btn btn-primary btn-lg btn-block compose-btn">Escrever</button>
+						</div>
+						<hr class="m-t-0 m-b-0">
+						<ul class="nav nav-pills nav-stacked">
+							<li class="active"><a href="#">Caixa de Entrada</a></li>
+							<li><a href="#">Enviada</a></li>
+							<li><a href="#">Rascunho</a></li>
+							<li><a href="#">Lixeira</a></li>
+							<li><a href="#">Spam</a></li>
+						</ul>
+					</div>	
+				</div>
+			</div> <!-- /.row -->	
+
+  	</div>
+<input type="file" multiple="multiple" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;">
+
+   <!-- Core Scripts - Include with every page -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	
+	   <script src="js/pushy.js"></script>
+	   <script src="js/retina.js"></script>
+	   <script src="js/easypiechart.js"></script>
+	   <script src="js/mosaicflow.js"></script>
+	   <script src="js/snapsvg.js"></script>
+	   <script src="js/dropzone.js"></script>
+	   <script src="js/admin.js"></script>
+	   
+	   
+
+    <!-- Page-Level Plugin Scripts - Dashboard -->
+    <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="js/sb-admin.js"></script>
+
+    <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
+    <script src="js/demo/dashboard-demo.js"></script>
+
+</body>
+
+</html>
